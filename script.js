@@ -11,3 +11,13 @@ const messageGenerator = () => {
 }
 
 console.log(messageGenerator());
+
+//Dom elements
+const button = document.getElementById("generate");
+const message = document.getElementById("message");
+
+button.addEventListener("click", () => {
+    message.innerHTML = messageGenerator();
+})
+
+console.log(messageGenerator())
